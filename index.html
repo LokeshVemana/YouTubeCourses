@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Aggregated Free Skill Course</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Skill HuB</h1>
+      <button id="enroll-btn">Enroll</button>
+    </header>
+
+    <main>
+      <!-- Course Overview Section -->
+      <section id="course-overview">
+        <h2>Course Title: Web Development Basics</h2>
+        <p>Skill Level: <strong>Beginner</strong></p>
+        <p>Estimated Duration: <strong>100 hours</strong></p>
+        <p>Total Videos: <strong>5</strong></p>
+        <p>Average Rating: <strong>4.5/5</strong></p>
+      </section>
+
+      <!-- Video List Section -->
+      <section id="video-list">
+        <h2>Video List</h2>
+        <ul>
+          <li>
+            <span data-url="https://www.youtube.com/embed/GAZVvpjxYQY"
+              >Video 1:HTML & CSS</span
+            >
+            <span>Duration: 10:00</span>
+            <span>Views: 50,000</span>
+            <label
+              ><input type="checkbox" class="completed-checkbox" /> Mark as
+              Completed</label
+            >
+          </li>
+          <li>
+            <span data-url="https://www.youtube.com/embed/CBWnBi-awSA"
+              >Video 2:Javascript</span
+            >
+            <span>Duration: 15:00</span>
+            <span>Views: 50,000</span>
+            <label
+              ><input type="checkbox" class="completed-checkbox" /> Mark as
+              Completed</label
+            >
+          </li>
+          <li>
+            <span data-url="https://www.youtube.com/embed/gbAdFfSdtQ4?start=147"
+              >Video 3: React.js</span
+            >
+            <span>Duration: 15:00</span>
+            <span>Views: 80,000</span>
+            <label
+              ><input type="checkbox" class="completed-checkbox" /> Mark as
+              Completed</label
+            >
+          </li>
+          <li>
+            <span data-url="https://www.youtube.com/embed/yGl3f0xTl_0"
+              >Video 4: Node.js</span
+            >
+            <span>Duration: 15:00</span>
+            <span>Views: 60,000</span>
+            <label
+              ><input type="checkbox" class="completed-checkbox" /> Mark as
+              Completed</label
+            >
+          </li>
+          <li>
+            <span data-url="https://www.youtube.com/embed/-bt_y4Loofg"
+              >Video 5: MongoDB</span
+            >
+            <span>Duration: 15:00</span>
+            <span>Views: 30,000</span>
+            <label
+              ><input type="checkbox" class="completed-checkbox" /> Mark as
+              Completed</label
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Video Player Section -->
+      <section id="video-player">
+        <h2>Video Player</h2>
+        <iframe
+          id="youtube-player"
+          src="https://www.youtube.com/embed/GAZVvpjxYQY"
+          allowfullscreen
+        ></iframe>
+        <p>
+          <strong>AI-Generated Summary:</strong> Learn the basics of web
+          development, including HTML, CSS,Javascript, React,Nodejs,and MongoDB basics for Beginners
+        </p>
+      </section>
+
+      <!-- Notes and Tools Section -->
+      <section id="notes-tools">
+        <h2>Notes and Tools</h2>
+        <textarea
+          id="custom-notes"
+          placeholder="Add your notes here..."
+        ></textarea>
+        <button id="save-notes-btn">Save Notes</button>
+        <h3>AI-Generated Questions</h3>
+        <ul>
+          <li>What is the purpose of HTML?</li>
+          <li>How does CSS enhance a webpage?</li>
+        </ul>
+      </section>
+
+      <!-- Progress Tracker -->
+      <section id="progress-tracker">
+        <h2>Progress Tracker</h2>
+        <div id="progress-bar-container">
+          <div id="progress-bar" style="width: 10%"></div>
+        </div>
+        <p>10% Completed</p>
+      </section>
+
+      <!-- Job-Seeker Tips -->
+      <section id="job-seeker-tips">
+        <h2>Job-Seeker Tips</h2>
+        <p>
+          Learn how to craft a compelling resume and apply for entry-level web
+          development roles. Highlight your skills and projects effectively!
+        </p>
+      </section>
+
+      <!-- Rate the Course -->
+      <section id="rate-course">
+        <h2>Rate the Course</h2>
+        <label>
+          <input type="number" id="course-rating" min="1" max="5" /> /5
+        </label>
+        <button id="submit-rating-btn">Submit Rating</button>
+      </section>
+
+      <!-- Optional Features -->
+      <section id="extras">
+        <h2>Extras</h2>
+        <button id="download-certificate-btn">Download Certificate</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 YouTube Skill Courses. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
